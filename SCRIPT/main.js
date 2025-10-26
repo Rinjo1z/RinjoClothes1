@@ -16,19 +16,21 @@
     });
   });
 
-  const botones = document.querySelectorAll('.filter-btn');
-  const imagenes = document.querySelectorAll('.image-item');
+ const botones = document.querySelectorAll('.filter-btn');
+const imagenes = document.querySelectorAll('.image-item');
 
-  botones.forEach(boton => {
-    boton.addEventListener('click', () => {
-      const categoria = boton.getAttribute('data-category');
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const categoria = boton.getAttribute('data-category').toLowerCase();
 
-      imagenes.forEach(img => {
-        if (categoria === 'todos' || img.getAttribute('data-category') === categoria) {
-          img.style.display = 'block';
-        } else {
-          img.style.display = 'none';
-        }
-      });
+    imagenes.forEach(img => {
+      const categorias = img.getAttribute('data-category').toLowerCase();
+
+      if (categoria === 'todos' || categorias.includes(categoria)) {
+        img.classList.remove('d-none');
+      } else {
+        img.classList.add('d-none');
+      }
     });
   });
+});
