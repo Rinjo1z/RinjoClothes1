@@ -12,20 +12,20 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="container">
             <div class="row align-items-center py-1">
                 <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center">
                     <h4 class="site-title">RINJO </h4>
                     <img src="IMG/logo.png" class="img-fluid me-2" alt="Logo RINJO" style="max-height: 40px;">
                 </div>
-                 <div class="col-12 col-md-6 col-lg-9 d-flex justify-content-center align-items-right gap-4">
+                <div class="col-12 col-md-6 col-lg-9 d-flex justify-content-center align-items-right gap-4">
                     <a href="index.html" class="fw-bold"> Inicio </a>
                     <a href="contact.html" class="fw-bold"> Productos </a>
                     <a href="" class="fw-bold"> Sobre nosotros </a>
                 </div>
-     </header>
-     <main>
+    </header>
+    <main>
         <div class="container my-5">
             <div class="row">
                 <div class="col-12 text-center">
@@ -34,67 +34,101 @@
                 </div>
             </div>
             <div class="text-center my-4">
-            <button class="btn btn-outline-light mx-2 filter-btn" data-category="todos">Todos</button>
-            <button class="btn btn-outline-light mx-2 filter-btn" data-category="Oversize">Oversize</button>
-            <button class="btn btn-outline-light mx-2 filter-btn" data-category="Hoodies"> Hoodies </button>
-            <button class="btn btn-outline-light mx-2 filter-btn" data-category="Normales"> Normales </button>
-        </div>
-        <div class="container">
-            <div class="row" id="galeria">
-                <div class="col-12 col-md-4 image-item" data-category="Oversize">
-                    <img src="IMG/GOKUVSVEGETA.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Goku vs Vegeta"
-                        data-descripcion="Camiseta Oversize y Normal con diseño de Goku y Vegeta en combate. 100% Algodón"
-                        alt="Goku vs Vegeta">
-                    <p class="fw-bold fs-5 text-center"> Saiyan Pride</p>
-                </div>
-                <div class="col-12 col-md-4 image-item" data-category="Oversize">
-                    <img src="IMG/KANROJI.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Mitsuri Kanroji"
-                        data-descripcion="Camiseta Oversize y Normal con diseño de la pilar del amor. 100% Algodón ">
-                    <p class="fw-bold fs-5 text-center"> Mitsuri Kanroji</p>
-                </div>
-                <div class="col-12 col-md-4 image-item" data-category="Hoodies">
-                    <img src="IMG/Gohan-Hoodie.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Son Gohan"
-                        data-descripcion="Hoodie de Son Gohan, 100% Algodón Algodón">
-                    <p class="fw-bold fs-5 text-center"> Hoodie Son Gohan </p>
-                </div>
-                <div class="col-12 col-md-4 image-item" data-category="Normales">
-                    <img src="IMG/NarutoKurama.jpg" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Naruto Uzumaki"
-                        data-descripcion="Camiseta Oversize y Normal de Naruto Uzumaki, 100% Algodón">
-                    <p class="fw-bold fs-5 text-center">  Naruto Uzumaki </p>
-                </div>
-                <div class="col-12 col-md-4 image-item" data-category="Oversize">
-                    <img src="IMG/Toji.jpg" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Toji Fushiguro" data-descripcion="Camiseta Oversize y Normal del Asesino de Satoru Gojo, Toji Fushiguro 100% algodon
+                <button class="btn btn-outline-light mx-2 filter-btn" data-category="todos">Todos</button>
+                <button class="btn btn-outline-light mx-2 filter-btn" data-category="Oversize">Oversize</button>
+                <button class="btn btn-outline-light mx-2 filter-btn" data-category="Hoodies"> Hoodies </button>
+                <button class="btn btn-outline-light mx-2 filter-btn" data-category="Normales"> Normales </button>
+            </div>
+            <div class="container">
+                <div class="row" id="galeria">
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">
+                        <img src="IMG/GOKUVSVEGETA.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Goku vs Vegeta"
+                            data-descripcion="Camiseta Oversize y Normal con diseño de Goku y Vegeta en combate. 100% Algodón"
+                            alt="Goku vs Vegeta">
+                        <p class="fw-bold fs-5 text-center"> Saiyan Pride</p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">
+                        <img src="IMG/KANROJI.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Mitsuri Kanroji"
+                            data-descripcion="Camiseta Oversize y Normal con diseño de la pilar del amor. 100% Algodón ">
+                        <p class="fw-bold fs-5 text-center"> Mitsuri Kanroji</p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Hoodies">
+                        <img src="IMG/Gohan-Hoodie.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Son Gohan"
+                            data-descripcion="Hoodie de Son Gohan, 100% Algodón Algodón">
+                        <p class="fw-bold fs-5 text-center"> Hoodie Son Gohan </p>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Normales Oversize">
+                        <img src="IMG/NarutoKurama.jpg" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Naruto Uzumaki"
+                            data-descripcion="Camiseta Oversize y Normal de Naruto Uzumaki, 100% Algodón">
+                        <p class="fw-bold fs-5 text-center"> Naruto Uzumaki </p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">
+                        <img src="IMG/Toji.jpg" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Toji Fushiguro" data-descripcion="Camiseta Oversize y Normal del Asesino de Satoru Gojo, Toji Fushiguro 100% algodon
                     ">
-                    <p class="fw-bold fs-5 text-center"> Toji Fushiguro</p>
-                </div>  
-                <div class="col-12 col-md-4 image-item" data-category="Oversize">
-                    <img src="IMG/tanjiro.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Tanjiro Kamado"
-                        data-descripcion="Camiseta Oversize y Normal de Tanjiro Kamado, 100% Algodón">
-                        <p class="fw-bold fs-5 text-center"> Tanjiro Kamado</p>
-                </div>
+                        <p class="fw-bold fs-5 text-center"> Toji Fushiguro</p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize  Normales">
+                        <img src="IMG/tanjiro.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Tanjiro Kamado"
+                            data-descripcion="Camiseta Oversize y Normal de Tanjiro Kamado, 100% Algodón">
+                        <p class="fw-bold fs-5 text-center mb-3"> Tanjiro Kamado</p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
 
-                <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">
-                    <img src="IMG/BlackClover.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Black Clover"
-                        data-descripcion="Camiseta Oversize y Normal de Black Clover, 100% Algodón">
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">
+                        <img src="IMG/BlackClover.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Black Clover"
+                            data-descripcion="Camiseta Oversize y Normal de Black Clover, 100% Algodón">
                         <p class="fw-bold fs-5 text-center"> Black Clover</p>
-                </div>
-                <div class="col-12 col-md-4 image-item" data-category="Hoodies">
-                    <img src="IMG/Buzo-black-clover.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
-                        data-bs-target="#modalImagen" data-titulo="Black Clover"
-                        data-descripcion="Hoodie de Black Clover, 100% Algodón">
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Hoodies">
+                        <img src="IMG/Buzo-black-clover.png" class="img-fluid rounded cursor-pointer"
+                            data-bs-toggle="modal" data-bs-target="#modalImagen" data-titulo="Black Clover"
+                            data-descripcion="Hoodie de Black Clover, 100% Algodón">
                         <p class="fw-bold fs-5 text-center"> Hoodie Black Clover</p>
-                </div>
+                    </div>
+                    <div class="col-12 col-md-4 image-item" data-category="Oversize Normales">}
+                        <img src="IMG/mahito-blanca.png" class="img-fluid rounded cursor-pointer" data-bs-toggle="modal"
+                            data-bs-target="#modalImagen" data-titulo="Mahito"
+                            data-descripcion="Camiseta Oversize y Normal de Mahito, 100% Algodón">
+                        <p class="fw-bold fs-5 text-center"> Mahito Jujutsu Kaisen</p>
+                        <div class="text-center">
+                            <span class="badge bg-secondary me-1 mb-3">Oversize</span>
+                            <span class="badge bg-secondary mb-3">Normal</span>
+                        </div>
+                    </div>
 
-     </main>
+    </main>
 
-      <div class="modal fade" id="modalImagen" tabindex="-1" aria-labelledby="modalImagenLabel" aria-hidden="true">
+    <div class="modal fade" id="modalImagen" tabindex="-1" aria-labelledby="modalImagenLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header border-0">
