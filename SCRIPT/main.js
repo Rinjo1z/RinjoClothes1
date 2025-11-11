@@ -1,22 +1,26 @@
- const modal = document.getElementById('modalImagen');
-  const modalTitle = document.getElementById('modalImagenLabel');
-  const modalImg = document.getElementById('modalImagenSrc');
-  const modalDesc = document.getElementById('modalImagenDescripcion');
+//Script para mostrar imagen en detalle
 
-  document.querySelectorAll('[data-bs-target="#modalImagen"]').forEach(img => {
-    img.addEventListener('click', () => {
-      const titulo = img.getAttribute('data-titulo');
-      const descripcion = img.getAttribute('data-descripcion');
-      const src = img.getAttribute('src');
+const modal = document.getElementById('modalImagen');
+const modalTitle = document.getElementById('modalImagenLabel');
+const modalImg = document.getElementById('modalImagenSrc');
+const modalDesc = document.getElementById('modalImagenDescripcion');
 
-      modalTitle.textContent = titulo;
-      modalImg.src = src;
-      modalImg.alt = titulo;
-      modalDesc.textContent = descripcion;
-    });
+document.querySelectorAll('[data-bs-target="#modalImagen"]').forEach(img => {
+  img.addEventListener('click', () => {
+    const titulo = img.getAttribute('data-titulo');
+    const descripcion = img.getAttribute('data-descripcion');
+    const src = img.getAttribute('src');
+
+    modalTitle.textContent = titulo;
+    modalImg.src = src;
+    modalImg.alt = titulo;
+    modalDesc.textContent = descripcion;
   });
+});
 
- const botones = document.querySelectorAll('.filter-btn');
+
+//Script para filtrar imagenes por categoria
+const botones = document.querySelectorAll('.filter-btn');
 const imagenes = document.querySelectorAll('.image-item');
 
 botones.forEach(boton => {
@@ -38,9 +42,11 @@ botones.forEach(boton => {
 const form = document.getElementById('formContact');
 const errorMsg = document.getElementById('errorMsg');
 
-form.addEventListener('submit', function(e) {
+
+//Script para validar formulario de contacto
+form.addEventListener('submit', function (e) {
   e.preventDefault();
-  
+
   const nombre = document.getElementById('nombre').value.trim();
   const email = document.getElementById('email').value.trim();
   const mensaje = document.getElementById('mensaje').value.trim();
@@ -63,7 +69,7 @@ form.addEventListener('submit', function(e) {
     errorMsg.classList.add('d-none');
     localStorage.setItem('mensajeExito', '¡Mensaje enviado con éxito!');
     form.submit();
-    
+
   }
 });
 
